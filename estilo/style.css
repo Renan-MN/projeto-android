@@ -8,30 +8,6 @@
     font-weight: normal;
 }
 
-@media (max-width: 768px) {
-    .video {
-        padding: 4%; /* Ajusta os espaçamentos */
-        padding-bottom: 50%; /* Ajusta a proporção para telas menores */
-    }
-
-    .camera, .button {
-        width: 8%; /* Aumenta o tamanho proporcionalmente */
-        height: 8%;
-    }
-}
-
-@media (max-width: 480px) {
-    .video {
-        padding: 3%;
-        padding-bottom: 60%; /* Faz o "celular" parecer mais alto em telas muito pequenas */
-    }
-
-    .camera, .button {
-        width: 10%; /* Aumenta ainda mais o tamanho */
-        height: 10%;
-    }
-}
-
 :root {
     --cor0: #caf5c3;
     --cor1: #83e1ad;
@@ -109,7 +85,7 @@ main {
     min-width: 300px;
     max-width: 1000px;
     margin: auto;
-    margin-bottom: 30px;
+    padding-bottom: 50px;
     padding: 20px;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.487);
@@ -167,7 +143,7 @@ div.video {
     background-color: rgba(0, 0, 0, 0.897);
     margin-bottom: 15px;
     padding: 20px;
-    padding-bottom: 40%;
+    padding-bottom: 50%;
     position: relative;
     border-radius: 10px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.841);
@@ -179,43 +155,7 @@ div.video > iframe {
     left: 5%;
     width: 90%;
     height: 90%;
-}
-
-.camera {
-    width: 20px; 
-    height: 20px;
-    background-color: rgba(73, 73, 73, 0.8); 
-    border-radius: 50%; 
-    position: absolute;
-    top: 50%; 
-    left: 10px;
-    transform: translateY(-50%);
-}
-
-.camera2 {
-    width: 10px;
-    height: 10px;
-    background-color: rgba(102, 102, 102, 0.8); 
-    border-radius: 50%;
-    position: absolute;
-    top: 50%; 
-    left: 15px;
-    transform: translateY(-50%);
-}
-
-.button {
-    width: 25px;
-    height: 30px; 
-    background-color: rgba(139, 139, 139, 0.679); 
-    border: none;
-    border-radius: 5px; 
-    position: absolute;
-    top: 50%; 
-    right: 10px;
-    transform: translateY(-50%); 
-    cursor: pointer;
-}
-
+} 
 
 aside {
     background-color: var(--cor1);
